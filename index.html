@@ -57,9 +57,9 @@
       color: #0e1a2b;
     }
     ul li::before {
-      content:;
+      content: "★";
       color: #e6c300;
-      padding-right: 10px;
+      margin-right: 10px;
     }
     footer {
       background: #0e1a2b;
@@ -68,73 +68,67 @@
       padding: 20px 10px;
       margin-top: 40px;
     }
+    /* Floating button */
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #e6c300;
+      color: #0e1a2b;
+      padding: 15px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
   </style>
 </head>
-  <!-- Floating Google Form Button -->
-<a href="https://forms.gle/xsD9Vi244j1XcZYy6" target="_blank" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #e6c300;
-  color: #0e1a2b;
-  padding: 15px 20px;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  z-index: 1000;
-">
-  Get More Information
-</a>
-
-<!-- Facebook Link -->
-<footer>
-  
-  <p>
-    <a href="https://www.facebook.com/profile.php?id=61578997820311" target="_blank" style="color: #e6c300; text-decoration: none;">
-      &#x1F4F7; Follow us on Facebook
-    </a>
-  </p>
-</footer>
 <body>
+
   <img src="logo.png" alt="PremierLink Logo" style="width:150px; display:block; margin: 0 auto 10px;">
+  
   <header>
     <h1>PremierLink Transportation</h1>
     <p>Northern Virginia's Premier Vanpool Service — Veteran Owned</p>
   </header>
+
   <nav>
-    <a href="#routes">Current Routes</a>
-    <a href="#contact">Potential New Routes</a>
+    <a href="#current-routes">Current Routes</a>
+    <a href="#potential-routes">Potential New Routes</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
   </nav>
+
   <section class="hero">
     <h1>For Stress-Free Commutes. Ride with PremierLink.</h1>
   </section>
-  <section class="content" id="current routes">
+
+  <section class="content" id="current-routes">
     <h2>Current Vanpool Routes</h2>
-    <div class="current route">
+    <div class="route">
       <h3>Springfield, VA to Ronald Reagan Building, DC</h3>
       <p>Convenient departure from near Edsall Road, arriving in the heart of DC. Enjoy a comfortable ride.</p>
     </div>
-    <div class="current route">
-  <section class="content" id="Potential New Routes">
+  </section>
+
+  <section class="content" id="potential-routes">
     <h2>Potential New Vanpool Routes</h2>
-    <div class="Potential New Routes">
-      <h3>Are you interested in? </h3>
+    <div class="route">
+      <h3>Are you interested in?</h3>
       <p>Burke, VA (Rolling Valley Park and Ride) to the Pentagon.</p>
       <p>Burke, VA (Rolling Valley Park and Ride) to the Ronald Reagan Building.</p>
-      <p>Springfield, VA (Commuter Garage) to the L'enfant.</p>
+      <p>Springfield, VA (Commuter Garage) to L’Enfant Plaza.</p>
       <p>Another route - reach out to us!</p>
     </div>
-    <div class="Potential New Routes">
   </section>
+
   <section class="content" id="about">
     <h2>Why Ride with PremierLink?</h2>
     <ul>
       <li>No more getting rained on, sweating in the heat or shivering in the cold waiting for a bus or slug.</li> 
       <li>No out-of-pocket expenses with employer SmartBenefits or transportation reimbursement</li>
-    <li>A set departure times going to work and coming home</li>
+      <li>Set departure times going to work and coming home</li>
       <li>Reserved parking and convenient pickup/drop-off</li>
       <li>Travel with a consistent group – no strangers</li>
       <li>Vehicles feature leather seats and captain's chairs for middle row passengers</li>
@@ -143,13 +137,25 @@
       <li>Wireless Apple CarPlay and Android Auto for seamless connectivity</li>
     </ul>
   </section>
+
   <section class="content" id="contact">
     <h2>Contact Us</h2>
     <p><strong>Phone:</strong> 612-564-5574</p>
     <p><strong>Email:</strong> <a href="mailto:premierlinktransportation@gmail.com">premierlinktransportation@gmail.com</a></p>
   </section>
+
   <footer>
+    <p>
+      <a href="https://www.facebook.com/profile.php?id=61578997820311" target="_blank" style="color: #e6c300; text-decoration: none;">
+        📷 Follow us on Facebook
+      </a>
+    </p>
     <p>&copy; 2025 PremierLink Transportation. All rights reserved.</p>
   </footer>
+
+  <a href="https://forms.gle/xsD9Vi244j1XcZYy6" target="_blank" class="floating-btn">
+    Get More Information
+  </a>
+
 </body>
 </html>
