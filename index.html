@@ -11,6 +11,7 @@
       padding: 0;
       background: #f0f0f0;
       color: #0e1a2b;
+      line-height: 1.6;
     }
     header {
       background: #0e1a2b;
@@ -32,17 +33,26 @@
     .hero {
       background: #233654;
       color: white;
-      padding: 100px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
     .hero h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       margin: 0;
     }
-    .content {
+    .section {
       max-width: 1000px;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 30px 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .section h2 {
+      border-bottom: 3px solid #233654;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      color: #0e1a2b;
     }
     .route {
       background: #e6c300;
@@ -50,11 +60,6 @@
       margin-bottom: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    section h2 {
-      border-bottom: 3px solid #233654;
-      padding-bottom: 5px;
-      color: #0e1a2b;
     }
     ul li::before {
       content: "★";
@@ -86,7 +91,7 @@
 </head>
 <body>
 
-  <img src="logo.png" alt="PremierLink Logo" style="width:150px; display:block; margin: 0 auto 10px;">
+  <img src="logo.png" alt="PremierLink Logo" style="width:150px; display:block; margin: 20px auto 10px;">
   
   <header>
     <h1>PremierLink Transportation</h1>
@@ -96,15 +101,15 @@
   <nav>
     <a href="#current-routes">Current Routes</a>
     <a href="#potential-routes">Potential New Routes</a>
-    <a href="#contact">Contact</a>
     <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <section class="hero">
     <h1>For Stress-Free Commutes. Ride with PremierLink.</h1>
   </section>
 
-  <section class="content" id="current-routes">
+  <section class="section" id="current-routes">
     <h2>Current Vanpool Routes</h2>
     <div class="route">
       <h3>Springfield, VA to Ronald Reagan Building, DC</h3>
@@ -112,7 +117,7 @@
     </div>
   </section>
 
-  <section class="content" id="potential-routes">
+  <section class="section" id="potential-routes">
     <h2>Potential New Vanpool Routes</h2>
     <div class="route">
       <h3>Are you interested in?</h3>
@@ -123,7 +128,7 @@
     </div>
   </section>
 
-  <section class="content" id="about">
+  <section class="section" id="about">
     <h2>Why Ride with PremierLink?</h2>
     <ul>
       <li>No more getting rained on, sweating in the heat or shivering in the cold waiting for a bus or slug.</li> 
@@ -138,7 +143,7 @@
     </ul>
   </section>
 
-  <section class="content" id="contact">
+  <section class="section" id="contact">
     <h2>Contact Us</h2>
     <p><strong>Phone:</strong> 612-564-5574</p>
     <p><strong>Email:</strong> <a href="mailto:premierlinktransportation@gmail.com">premierlinktransportation@gmail.com</a></p>
